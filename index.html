@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Easy-Vreco</title>
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:300,500,800|Rammetto+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<nav>
+  		<div class="nav-wrapper teal accent-4 col s3 m3 l3 logoContainer">
+  			<div class="row">
+  				<a href="" class="brand-logo white-text s1 easyV flow-tex">Easy-Vreco</a>
+  			</div>		 
+  		</div>
+	</nav>
+	<!--Seccion de inputs y botones-->
+  	<div class="row">
+  		<!--Input Origen-->
+  		<div class="col s12 m4 l4">
+  			<div class="card-panel teal accent-4">
+  				<div class="row">
+    				<div class="input-field col s10 m10 l10">
+      					<input value="" id="partida" type="text" class="validate">
+      					<label class="active white-text originText" for="first_name2">Origen</label>
+    				</div>
+  				</div>
+  			</div>
+  		</div>
+		<!--Input Destino-->
+      	<div class="col s12 m4 l4">
+      		<div class="card-panel teal accent-4">
+      			<div class="row">
+    				<div class="input-field col s10 m10 l10">
+      					<input value="" id="destino" type="text" class="validate">
+      					<label class="active white-text originText" for="first_name2">Destino</label>
+    				</div>
+  				</div>
+      		</div>
+      	</div>
+      	<!--Input Destino-->
+      	<div class="col s12 m4 l4">
+      		<div class="card-panel teal accent-4">
+      			<div class="row">
+      				<a class="waves-effect waves-light btn" id="encuentrame">Mi ubicación</a>
+  				</div>
+  				<div class="row">
+  					<a class="waves-effect waves-light btn" id="trazar-ruta">Ruta</a>
+  				</div>
+      		</div>
+      	</div>
+      </div>
+ <!--Creo un div que contendra mi mapa-->  
+      	<div class="col s12 m12 l12">
+      		<div class="card-panel teal">
+      			<div id="map"></div>
+      		</div>
+      	</div>      
+
+<!--Script para aplicar al API KEY de google maps/ "callback=initMap"es la función a la que llamará/ agregamos una librería incluyendo &libraries=places-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1hByqeewhaxxhZEVvzJHYAO7fVFS4MDM&callback=initMap&libraries=places"
+  type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js" ></script>
+  <script type="text/javascript" src="assets/js/app.js" ></script>
+</body>
+</html>

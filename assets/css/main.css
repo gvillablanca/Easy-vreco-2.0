@@ -1,0 +1,19 @@
+
+.easyV{
+font-family: 'Rammetto One', cursive;
+}
+
+div #map{
+  width: 100%;
+  height: 60vh;
+}
+
+.originText{
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 800;
+  font-size: 1.5em !important;
+}
+
+.logoContainer{
+	text-align: center;
+}
