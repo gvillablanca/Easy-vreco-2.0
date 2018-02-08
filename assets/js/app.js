@@ -30,7 +30,7 @@ encuentrame.addEventListener('click',()=>{
               lng: position.coords.longitude
             };
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('Aqui estas tu!');
             map.setCenter(pos);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
@@ -48,8 +48,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                               'Error: Your browser doesn\'t support geolocation.');
 }
 
-
-  //  Llamamos a los inputs que queremos que tengan el autocompletado
+//  Llamamos a los inputs que queremos que tengan el autocompletado
   var inputPartida = document.getElementById('partida');
   var inputDestino = document.getElementById('destino');
   //  Por medio de la clase autocomplete indicamos que este input va a tener autocompletado
@@ -78,7 +77,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   }
 
 //  Indicamos al mapa que trace la ruta
-directionsDisplay.setMap(map);   
+directionsDisplay.setMap(map);  
+ 
 var trazarRuta = function() {
   //  Declaramos la función "trazarRuta" que tendrá la función calculateAndDisplayRoute 
   calculateAndDisplayRoute(directionsService, directionsDisplay);
