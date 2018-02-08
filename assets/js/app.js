@@ -10,11 +10,12 @@ function initMap() {
     //  Indicamos que el mapa con las coordenadas aparesca centrado
     center: mainMap
   });
-
+  var iconBike = 'http://www.museosmalaga.net/wp-content/uploads/2015/07/icono-bicicleta.png';
   // Colocamos el marcador en el mapa
   var markadorMainMap = new google.maps.Marker({
     //  El marcador recibe la latitud y longitud de mainMap
     position: mainMap,
+    icon: iconBike,
     // Se indica que el marcador aparesca en el mapa llamado map
     map: map 
   });
@@ -65,7 +66,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     directionsService.route({
       origin: inputPartida.value,
       destination: inputDestino.value,
-      travelMode: 'DRIVING'
+      travelMode: 'WALKING'
     }, function(response, status) {
       //  Si el status es OK, entonces se trazará la ruta. Si no, se envía un alert
       if (status === 'OK') {
