@@ -10,6 +10,7 @@ function initMap() {
     //  Indicamos que el mapa con las coordenadas aparesca centrado
     center: mainMap
   });
+
   var iconBike = 'http://www.museosmalaga.net/wp-content/uploads/2015/07/icono-bicicleta.png';
   // Colocamos el marcador en el mapa
   var markadorMainMap = new google.maps.Marker({
